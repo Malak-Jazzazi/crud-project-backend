@@ -86,14 +86,6 @@ public class WarehouseService {
         warehouseRepository.deleteAll(warehouses);
     }
 
-    public boolean checkIfWarehouseExist(String name) {
-        return warehouseRepository.existsByName(name);
-    }
-
-    public String checkName(Long id) {
-        return warehouseRepository.findById(id).get().getName();
-    }
-
     public Optional<Warehouse> getWarehouseByName(String name) {
         return warehouseRepository.findByName(name);
     }
