@@ -62,11 +62,11 @@ public class DocumentService {
 
             List<Document> documents;
             if (isEmployee) {
-                documents = documentRepository.findAll();
-                logger.info("User is an employee, returning all documents. Total: {}", documents.size());
-            } else {
                 documents = documentRepository.findByCreatedBy(username);
-                logger.info("User is not an employee, returning own documents. Total: {}", documents.size());
+                logger.info("User is not an employee, returning all documents. Total: {}", documents.size());
+            } else {
+                documents = documentRepository.findAll();
+                logger.info("User is an employee, returning own documents. Total: {}", documents.size());
             }
 
             return documents;
