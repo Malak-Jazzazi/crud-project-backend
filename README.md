@@ -4,6 +4,11 @@
 
 This project is a CRUD (Create, Read, Update, Delete) application built with Angular for the frontend, Spring Boot for the backend, and JWT for security. It utilizes REST APIs for communication between the frontend and backend.
 
+You can take a look at following flow to have an overview of Requests and Responses that Angular 12 Client and spring boot will make or receive.
+
+
+![angular-12-jwt-authentication-flow](https://github.com/Malak-Jazzazi/crud-project-frontend/assets/100603606/29320b26-7d72-4eb7-8e32-42caf804fe22)
+
 ## Setup
 
 1. **Database Setup**:
@@ -47,3 +52,4 @@ This project is a CRUD (Create, Read, Update, Delete) application built with Ang
 | Backend   | Spring Boot  |
 | Frontend  | Angular      |
 | Security  | JWT          |
+
