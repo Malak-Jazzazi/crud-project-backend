@@ -14,21 +14,5 @@ public class TestController {
         return "Public Content.";
     }
 
-    @GetMapping("/user")
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
-    public String userAccess() {
-        return "User Content.";
-    }
 
-    @GetMapping("/employee")
-    @PreAuthorize("hasRole('EMPLOYEE') or hasRole('MANAGER')")
-    public ResponseEntity<String> moderatorAccess() {
-        return ResponseEntity.ok("Employee Board.");
-    }
-
-    @GetMapping("/manager")
-    @PreAuthorize("hasRole('MANAGER')")
-    public String adminAccess() {
-        return "Manager Board.";
-    }
 }
