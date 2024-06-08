@@ -23,7 +23,7 @@ INSERT INTO `crud-data`.`warehouse` (`created_on`, `created_by`, `description`, 
 VALUES ('2024-02-01 22:50:24.557165', 'malak', 'Groceries and Daily Needs', 'Grocery Store');
 
 INSERT INTO `crud-data`.`warehouse` (`created_on`, `created_by`, `description`, `name`)
-VALUES ('2024-02-15 23:00:24.557165', 'malak', 'Furniture and Home Decor (No items empty warehouse)', 'Home Comforts');
+VALUES ('2024-02-15 23:00:24.557165', 'malak', 'Furniture and Home Decor (No items)', 'Home Comforts');
 
 INSERT INTO `crud-data`.`warehouse` (`created_on`, `created_by`, `description`, `name`)
 VALUES ('2024-4-16 23:10:24.557165', 'malak', 'Clothing and Accessories', 'Fashion Outlet');
